@@ -12,13 +12,24 @@ public class ArrayUtilTest {
 	@Test
 	public void ArrayUtilTest() {
 
-		int[] arrayBefore = { 0, 5, 6, 0, 0, 2, 5 };
-		int[] arrayAfter = { 5, 6, 2, 5 };
+		int[] arrayBefore = { 1, 2, 0, 4, 5, 6, 7, 0, 0 };
+		int[] arrayAfter = { 1, 2, 4, 5, 6, 7 };
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		// this loop is to remove all zeros
 		while (ArrayUtils.contains(arrayBefore, 0))
 			arrayBefore = ArrayUtils.removeElement(arrayBefore, 0);
-		assertTrue(Arrays.compare(arrayBefore, arrayAfter) == 0);
+		
+		
+		assertTrue(Arrays.equals(arrayBefore,  arrayAfter));
+
 		
 		// this loop will print the array elemnents
 		for (int i : arrayBefore)
